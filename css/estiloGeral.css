@@ -9,6 +9,7 @@ body {
 background:linear-gradient(to right, #020617, #0f172a);
 
     min-height:100vh;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -120,7 +121,18 @@ header {
     .texto h2{
         font-size:40px;
     }
+    
+    #html{
+        font-size:clamp(35px, 5vw, 70px);
+    }
+    
+    #css {
+        font-size:clamp(35px, 5vw, 70px);
+    }
 
+    #JS {
+        font-size:clamp(35px, 5vw, 70px);
+    }
 }
 
 .explicacao {
@@ -142,25 +154,36 @@ header {
     transition:0.3s;
     box-shadow:0 0 20px rgba(0,0,0,0.3);
     cursor: pointer;
+    display: none;
+}
+
+.card.active {
+    display: block;
 }
 
 #html {
     color:#d1911a;
-    font-size:70px;
+    font-size:clamp(35px, 5vw, 70px);
     margin-bottom:15px;
     text-align: center;
 }
 
 #css {
     color: #3b82f6;
-    font-size: 70px;
+    font-size:clamp(35px, 5vw, 70px);
     line-height: 1.5;
     text-align: center;
 }
 
+#JS {
+    color: #d5e40a;
+    font-size: clamp(24px, 5vw, 70px);
+    line-height: 1.5;
+    text-align: center;
+}
 .card p{
     color:#cbd5e1;
-    font-size:32px;
+    font-size:clamp(12px, 5vw, 32px);
     line-height:1.5;
     text-align: center;
 }
@@ -168,4 +191,37 @@ header {
 .card:hover {
     transition: 0.3s;
     transform: scale(1.1);
+}
+
+#prev, #next {
+    position: absolute;
+    top: 122%;
+    transform: translate(-50%);
+    width: clamp(20px, 5vw, 50px);
+    height: clamp(20px, 5vw, 50px);
+    color: #0f172a;
+    border: solid 1px #0b1120;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 50%;
+    background-color: #525f7e;
+}
+
+#prev {
+    left: 5%;
+}
+
+#next {
+    right: 0%
+}
+
+@keyframes toActive {
+    from {
+        top: 120%;
+        opacity: 0;
+    }
+}
+
+.card.active {
+    animation: toActive 0.5s ease-in-out;
 }
