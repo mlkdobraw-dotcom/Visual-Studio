@@ -122,3 +122,50 @@ header {
     }
 
 }
+
+.explicacao {
+    width: 90%;
+    margin: 100px auto;
+    display:flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width:50%;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:20px;
+    padding:30px;
+    backdrop-filter:blur(10px);
+    transition:0.3s;
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+#html {
+    color:#d1911a;
+    font-size:70px;
+    margin-bottom:15px;
+    text-align: center;
+}
+
+#css {
+    color: #3b82f6;
+    font-size: 70px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.card p{
+    color:#cbd5e1;
+    font-size:32px;
+    line-height:1.5;
+    text-align: center;
+}
+
+.card:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}

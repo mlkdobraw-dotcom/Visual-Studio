@@ -40,3 +40,4 @@ setInterval(function(){
 
     img.style.transition = "2.0s";
 }, 1500);
+
