@@ -64,3 +64,13 @@ prev.onclick = () => {
     active = active <= 0  ? count -1 : active - 1
     list[active].classList.add('active')
 }
+
+// pagina login
+
+const login = document.getElementById("Login");
+
+login.addEventListener("click", function(){
+
+    window.location.href = "login.html";
+
+});

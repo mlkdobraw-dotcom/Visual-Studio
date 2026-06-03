@@ -53,6 +53,25 @@ header {
     color: #3b82f6;
 }
 
+#Login {
+    width: auto;
+    right: 10%;
+    border-radius: 10px;
+    background-color: #3b82f6;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+}
+
+#Login:hover {
+    transition: 0.3s;
+    transform: scale(1.1); 
+}
+#LOGIN {
+    font-size: 18px;
+    color: black;
+}
+
 .Inicio {
     width:90%;
     margin: 80px auto;
@@ -132,6 +151,10 @@ header {
 
     #JS {
         font-size:clamp(35px, 5vw, 70px);
+    }
+    #prev, #next {
+        width: clamp(20px, 5vw, 50px);
+        height: clamp(20px, 5vw, 50px);
     }
 }
 
@@ -224,4 +247,94 @@ header {
 
 .card.active {
     animation: toActive 0.5s ease-in-out;
+}
+
+/* pagina login */
+
+
+#entrarConta {
+    width: 30%;
+    height: 70%;
+    background-color: #1d283a;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logoLogin {
+    width: 25%;
+    position: absolute;
+    top: 0%;
+    margin: bottom;
+}
+#loginConta {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    width: 300px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #0f172a;
+    color: #cbd5e1;
+    font-size: 18px;
+}
+
+#senhaConta {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    width: 300px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #0f172a;
+    color: #cbd5e1;
+    font-size: 18px;
+}
+
+#entrar{
+    position: absolute;
+    top: 65%;
+    right: 11%;
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #080e1b;
+    color: white;
+}
+
+#esqueciSenha {
+    color: white;
+    position: absolute;
+    bottom: 30%;
+    left: 15%;
+    font-size: small;
+}
+
+
+@media (max-width:768px){
+    
+    #entrarConta {
+        width: 70%;
+
+    }
+    
+    
+    #loginConta {
+        width: clamp(70%, 5vw, 70%);
+        left: 50%;
+        top: 35%;
+        transform: translate(-50%);
+    }
+
+    #senhaConta {
+        width: clamp(70%, 5vw, 70%);
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%);
+    }
 }
