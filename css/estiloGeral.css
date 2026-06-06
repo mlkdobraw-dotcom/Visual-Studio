@@ -156,6 +156,7 @@ header {
         width: clamp(20px, 5vw, 50px);
         height: clamp(20px, 5vw, 50px);
     }
+
 }
 
 .explicacao {
@@ -266,6 +267,20 @@ header {
     align-items: center;
 }
 
+#voltarInicio {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    color: rgb(90, 15, 189);
+    text-align: center;
+    background-color: #1d283a;
+    cursor: pointer;
+}
+
 #logoLogin {
     width: 25%;
     position: absolute;
@@ -336,5 +351,16 @@ header {
         left: 50%;
         top: 50%;
         transform: translate(-50%);
+    }
+
+    #entrar{
+    position: absolute;
+    top: 65%;
+    right: 13%;
+    width: clamp(30%, 5vw, 30%);
+    height: 40px;
+    border-radius: 20px;
+    background-color: #080e1b;
+    color: white;
     }
 }

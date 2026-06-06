@@ -74,3 +74,10 @@ login.addEventListener("click", function(){
     window.location.href = "login.html";
 
 });
+
+const voltarInicio = document.getElementById("voltarInicio");
+
+voltarInicio.addEventListener("click", function(){
+
+    window.location.href ="../index.html";
+});
